@@ -4,31 +4,57 @@
 ##############################################################################################################
 # basic review
 # Find and display on the screen which character occupies the fifth position within the following word:
-"computer"
+computer = "computer"
+print(computer[4])
+
 
 # Find and display the index of the last occurrence of the word "practice" in the following sentence:
-"In theory, theory and practice are the same. In practice, they are not."
+newSentence = "In theory, theory and practice are the same. In practice, they are not."
+print(newSentence.rindex("practice"))
 
 ###############################################Review############################################################
 #####################################challenge 1################################################################
 # Create a list with 5 elements, inside the variable my_list. You can include strings, booleans, numbers, etc.
-
+my_list = ["bay","ddaa", 34, 56, 78, 89, 102]
+my_list.append("jewelry")
+print(my_list)
+my_list.pop
+#pop() removes from the end
+print(my_list)
+my_list.remove("ddaa")
+#remove() removes at a cetian index
+print(my_list)
+my_list.insert(3,"bobba bobba")
+print(my_list)
+my_list2= ["jonathan","star wars","avengers","hello"]
+my_list3 = my_list+my_list2
+print(my_list3)
 # Add the element "motorcycle" to the following list of means of transportation:
 
-transportation_means = ["plane", "car", "ship", "bicycle"]
-
+# transportation_means = ["plane", "car", "ship", "bicycle"]
+# transportation_means.append("motorcycle")
+# #append adds an element to the end
+# print(transportation_means)
+# transportation_means.remove("car")
+# print(transportation_means)
+# newTrans = transportation_means.pop()
+# #pop removes the last element
+# print("my new trans is " +newTrans)
+# transportation_means.insert(1,"tesla")
+# print(transportation_means)
 # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
 
 # here are two lists:
 luckyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15]
 friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
+
 # instructions:
 ######join both lists together in a new list
-
+newList = friends+luckyNumbers
 ###### print the new list out
-
+print(newList)
 ###### print out the first item in the list
-
+print(newlist.ind
 ###### remove the last item of the new list
 
 ###### print the new list out without the last item
@@ -64,31 +90,46 @@ text2 = "Never trust a computer you can't throw out a window"
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
 
 text3 = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+# print(text3.reverse())
 
 # Extract the first word of the following sentence using slicing, and display it on the screen:
-"Controlling complexity is the essence of programming"
+sentence ="Controlling complexity is the essence of programming"
+
+#carlos did this one
+
+
 
 # create a text input that asks for choice of food
-#create an empty list variable called food
-# add 3 items from the user into the empty list
-#print out the menu list
+# foodChoice = input("what is your choice in food?")
+# #create an empty list variable called food
+# food = []
+# # add 3 items from the user into the empty list
+# food.append(foodChoice)
+# food.append(foodChoice)
+# food.append(foodChoice)
+# #print out the menu list
+# print(food)
 
 ##############################################################################################################
 # what are tuples?
-# exactly the same thing as an array only it is immutable, once you define the tuple, you cannot change it or modify it
+# exactly the same thing as an array only it is immutable, once you define the tuple,
+#you cannot change it or modify it
 #you define a tuple with () instead of [] like you would in lists
 #once you define it, you cannot change it
 #example
 coordinates = (4, 5)
 # get the first element in the above tuple
+# print(coordinates[1])
 # lets make this a multidimensional array
 coordindates2 = [(4, 5), (6, 7), (80, 34)]
 #get the second element of the second item in coordinates2
 
 # we use parentheses not [] in tuples
 my_tuple1 = (1, 2, 3, 4)
+
 # get the second item in the tuple1 above
 my_tuple = (1, 2, (10, 20), 4)
+
 # get the second item in the 3rd item above
 #hint multidimensional array thinking
 
